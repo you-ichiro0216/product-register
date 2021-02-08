@@ -16,7 +16,7 @@ class ProductsTest < ApplicationSystemTestCase
 
     fill_in "Name", with: @product.name
     fill_in "Price", with: @product.price
-    fill_in "Vendoe", with: @product.vendoe
+    fill_in "Vendor", with: @product.vendor
     click_on "Create Product"
 
     assert_text "Product was successfully created"
@@ -29,7 +29,7 @@ class ProductsTest < ApplicationSystemTestCase
 
     fill_in "Name", with: @product.name
     fill_in "Price", with: @product.price
-    fill_in "Vendoe", with: @product.vendoe
+    fill_in "Vendor", with: @product.vendor
     click_on "Update Product"
 
     assert_text "Product was successfully updated"
